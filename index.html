@@ -42,15 +42,16 @@
                <div class="navbar-nav">
                   <a class="nav-item nav-link" href="index.html">Home</a>
                   <a class="nav-item nav-link" href="about.html">About</a>
-                  <a class="nav-item nav-link" href="buy.html">HarvestHub</a>
-                  <a class="nav-item nav-link" href="sell.html">GrowMarket</a>
-                  <a class="nav-item nav-link" href="news.html">CropChronicle</a>
+                  <a class="nav-item nav-link" href="buy.html">Buy Products</a>
+                  <a class="nav-item nav-link" href="sell.html">Sell Products</a>
+                  <a class="nav-item nav-link" href="news.html">Agro News</a>
                   <a class="nav-item nav-link" href="contact.html">Contact us</a>
                </div>
             </div>
             <div class="login_menu">
                <ul>
                   <li><a href="login.html">LOGIN</a></li>
+                  <li><a href="register.html">REGISTER</a></li>
                </ul>
             </div>
          </nav>
@@ -74,9 +75,9 @@
                            <ul>
                               <li class="active"><a href="index.html">Home</a></li>
                               <li><a href="about.html">About</a></li>
-                              <li><a href="buy.html">HarvestHub</a></li>
-                              <li><a href="sell.html">GrowMarket</a></li>
-                              <li><a href="news.html">CropChronicle</a></li>
+                              <li><a href="buy.html">Buy Products</a></li>
+                              <li><a href="sell.html">Sell Products</a></li>
+                              <li><a href="news.html">Agro News</a></li>
                               <li><a href="contact.html">Contact us</a></li>
                            </ul>
                         </div>
@@ -201,7 +202,7 @@
             <div class="services_section_2 layout_padding">
                <div class="row">
                   <div class="col-md-4">
-                     <div class="image_main active">
+                     <div class="image_main">
                         <img src="images/img-2.png" class="image_2">
                         <h2 class="vegetable_text">Vegetable</h2>
                      </div>
@@ -236,7 +237,7 @@
                   </div>
                </div>
             </div>
-            <div class="read_bt_1"><a href="buy.html">Read More</a></div>
+            <div class="read_bt_1"><a href="buy.html">BUY NOW</a></div>
          </div>
       </div>
       <!-- services section end -->
@@ -369,8 +370,11 @@
                   <div class="newsletter_main">
                      <h1 class="newsletter_taital">Subscribe Our Newsletter</h1>
                      <p class="newsletter_text">Subscribe to get a weekly harvest of exclusive content – from agri-trends and tips to special offers. Cultivate knowledge and stay connected with the agricultural community</p>
-                     <input type="text" class="mail_text" placeholder="Enter Your Email" name="Enter Your Email">
-                     <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                     <form action="newsletter.php" method="post" class="newsletter_form">
+                        <input type="text" class="mail_text" placeholder="Enter Your Email" name="Mail">
+                        <input type="submit" class="mail_text " value="Subscribe" name="submit" style="
+                        background-color: #a3b104; color: white;">
+                     </form>
                   </div>
                </div>
                <div class="col-md-6 padding_right_0">
@@ -393,23 +397,24 @@
                <div class="row">
                   <div class="col-md-6">
                      <div class="mail_main">
-                        <form action="/action_page.php">
+                        <form action="contactus.php" method="post">
                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
+                              <input type="text" class="email-bt" placeholder="Name" name="Name" required>
                            </div>
                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
+                              <input type="text" class="email-bt" placeholder="Email" name="Email" required>
                            </div>
                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Subject" name="Email">
+                              <input type="text" class="email-bt" placeholder="Subject" name="Subject" required>
                            </div>
                            <div class="form-group">
-                              <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                              <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Message"></textarea>
+                           </div>
+                           <div class="send_btn">
+                              <input type="submit" class="mail_text " value="Send" name="submit" style="background-color: #a3b104; color: white;">
                            </div>
                         </form>
-                        <div class="send_btn">
-                           <div class="main_bt"><a href="#">Send</a></div>
-                        </div>
+                        
                      </div>
                   </div>
                   <div class="col-md-6">

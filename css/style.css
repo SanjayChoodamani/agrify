@@ -185,6 +185,10 @@ img {
     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
+.navbar{
+    padding: 30px 50px;
+}
+
 .navbar-form input {
     border: none !important;
 }
@@ -241,17 +245,18 @@ button {
 }
 
 .login_menu {
-    float: left;
+    display: flex;
 }
 
 .login_menu ul {
     margin: 0px;
     padding: 0px;
+    display: flex;
 }
 
 .login_menu li {
     font-size: 18px;
-    color: #ffffff;
+    color: #806565;
     text-align: center;
     float: left;
     padding-left: 30px;
@@ -265,10 +270,14 @@ button {
     color: #a3b104;
 }
 
+@media(max-width: 480px){
+
+}
+
 .banner_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding: 10px 10px 90px;
 }
 
 .banner_taital {
@@ -482,7 +491,7 @@ button {
 .about_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding: 100px 50px 100px 20px;
 }
 
 .about_main {
@@ -1111,4 +1120,25 @@ textarea.massage-bt::placeholder {
 
 .margin_top_90 {
     margin-top: 90px;
+}
+
+.sell-group{
+    display: flex;
+    gap: 0px 10px;
+}
+
+.loginHeading, .loginForm{
+    text-align: center;
+}
+.loginForm{
+    margin: auto auto;
+    width: 30%;
+}
+.loginForm button{
+    width: max-content;
+    margin: 10px 0px;
+    padding: 2px 10px;
+    font-size: 25px;
+    background-color: #a3b104;
+    border-radius: 5px;
 }
